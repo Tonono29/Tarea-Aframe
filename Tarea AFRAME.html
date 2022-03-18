@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Ejemplo 01: Primitiva Escena</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+           <a-asset-item id="Comedor" src="Objetos/comedor.gltf"></a-asset-item>
+           <a-asset-item id="Perro" src="Objetos/Perro/scene.gltf"></a-asset-item>
+      </a-assets>
+        <a-entity gltf-model="#Comedor"></a-entity>
+        <a-entity gltf-model="#Perro" scale="0.025 0.025 0.025" rotation="0 0 0" position="0 0 -3"
+            animation="property: rotation;
+               loop: true;
+               dur: 10000;
+               fill: forwards;
+               to: 0 360 0;
+               repeat: indefinite">
+        </a-entity>
+        
+    </a-scene>
+  </body>
+</html>
