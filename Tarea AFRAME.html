@@ -7,9 +7,12 @@
   <body>
     <a-scene light="defaultLightsEnabled: true">
       <a-assets>
+           <audio id="ladrido" src="Objetos/Perro/Ladrido.mp3"></audio>
            <a-asset-item id="Comedor" src="Objetos/comedor.gltf"></a-asset-item>
            <a-asset-item id="Perro" src="Objetos/Perro/scene.gltf"></a-asset-item>
+           <a-asset-item id="Gato" src="Objetos/Gato/scene.gltf"></a-asset-item>
       </a-assets>
+        <a-entity camera="" look-controls="" wasd-controls="acceleration: 5" position="-0.06614 1 -1.40126"></a-entity>
         <a-entity light="type: point; intensity: 2; distance: 50; decay: 2" position="0 2.5 0"></a-entity>
         <a-entity light="type: spot; angle: 47.93; color: #00ff6e; intensity: 50; penumbra: 0.21" position="0 2.1 -3.463" scale="1 1 1" visible="true" rotation="0 0 90"></a-entity>
         <a-entity gltf-model="#Comedor"></a-entity>
@@ -19,9 +22,22 @@
                dur: 10000;
                fill: forwards;
                to: 0 360 0;
-               repeat: indefinite">
+               repeat: indefinite"
+            sound="src: #ladrido;
+        	   on: click;
+        	   volume: 1;
+        	   refDistance: 4;
+        	   rolloffFactor: 4">
         </a-entity>
-        
+        <a-entity gltf-model="#Gato" scale="0.025 0.025 0.025" rotation="0 0 0" position="-1.3 0 -2"
+            animation="property: position;
+                from: -1.3 0 -2.2;
+                to: -1.3 0 1.8;
+                loop: true;
+                dir: alternate;
+                dur: 10000;
+                easing: easeInOutCubic">
+        </a-entity> 
     </a-scene>
   </body>
 </html>

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Cat Husa
+* source:	https://sketchfab.com/3d-models/cat-husa-e1f996075ece4f26855879eaaae17790
+* author:	liye.yan1994 (https://sketchfab.com/liye.yan1994)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Cat Husa" (https://sketchfab.com/3d-models/cat-husa-e1f996075ece4f26855879eaaae17790) by liye.yan1994 (https://sketchfab.com/liye.yan1994) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
